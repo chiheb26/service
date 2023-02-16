@@ -41,7 +41,7 @@ public class GeoIPConfig {
       //  ClassPathResource resource = new ClassPathResource(databasePath);
        // InputStream database = resource.getInputStream();
       // return new DatabaseReader.Builder(database).build();
-        return new DatabaseReader.Builder(resource.getFile()).build();
+        return new DatabaseReader.Builder(resource.getInputStream()).build();
     }
 
 
