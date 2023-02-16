@@ -9,11 +9,9 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class GeoIP {
-    private String ip;
-    private String city;
-    private Location location;
-    private Country country;
-
-
+public class Country {
+    private String name;
+    private String isoCode;
+    private String ContinentName;
+    private Boolean isInEuropeanUnion;
 }
