@@ -30,7 +30,7 @@ public class GeoIPConfig {
         Resource resource = resourceLoader.getResource(databasePath);
 
        // InputStream inputStream = resource.getInputStream();
-        File database = new File(resource.getFile().toPath().toString());
+      //  File database = new File(resource.getFile().toURI());
 
         // ClassPathResourceLoader resourceLoader = new ClassPathResourceLoader();
       //  Resource resource = resourceLoader.getResource("classpath:file.txt");
@@ -41,7 +41,7 @@ public class GeoIPConfig {
       //  ClassPathResource resource = new ClassPathResource(databasePath);
        // InputStream database = resource.getInputStream();
       // return new DatabaseReader.Builder(database).build();
-        return new DatabaseReader.Builder(database).build();
+        return new DatabaseReader.Builder(resource.getFile()).build();
     }
 
 
