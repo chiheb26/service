@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 @SpringBootApplication
-@RestController
 public class DemoApplication {
 
 
@@ -17,13 +16,6 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@GetMapping("/ip")
-	public String getIpAddress(HttpServletRequest request) {
-		String xff = request.getHeader("X-Forwarded-For");
-		if (xff != null) {
-			return xff.split(",")[0];
-		}
-		return request.getRemoteAddr();
-	}
+
 
 }
