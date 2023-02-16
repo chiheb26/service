@@ -24,11 +24,10 @@ public class GeoIPConfig {
     private ResourceLoader resourceLoader;
     @Bean
     public DatabaseReader databaseReader() throws IOException {
-       //File database = new File(databasePath);
+       File database = new File(databasePath);
 
 
         Resource resource = resourceLoader.getResource(databasePath);
-        File database= new File(resource.getFile().getAbsolutePath());
        // InputStream inputStream = resource.getInputStream();
 
 
