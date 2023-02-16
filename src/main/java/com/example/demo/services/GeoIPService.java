@@ -26,7 +26,7 @@ public class GeoIPService {
                 response.getLocation().getTimeZone(),response.getLocation().getPopulationDensity(),
                 response.getLocation().getAverageIncome(),response.getLocation().getMetroCode());
 
-        Country country= new Country(response.getContinent().getName(),response.getCountry().getIsoCode(),
+        Country country= new Country(response.getCountry().getName(),response.getCountry().getIsoCode(),
                 response.getContinent().getName(),response.getCountry().isInEuropeanUnion());
 
 
@@ -44,7 +44,7 @@ public class GeoIPService {
                 response.getLocation().getTimeZone(),response.getLocation().getPopulationDensity(),
                 response.getLocation().getAverageIncome(),response.getLocation().getMetroCode());
 
-    Country country= new Country(response.getContinent().getName(),response.getCountry().getIsoCode(),
+    Country country= new Country(response.getCountry().getName(),response.getCountry().getIsoCode(),
             response.getContinent().getName(),response.getCountry().isInEuropeanUnion());
 
 
