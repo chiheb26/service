@@ -28,7 +28,7 @@ public class GeoIPConfig {
 
 
         Resource resource = resourceLoader.getResource(databasePath);
-        File database= resource.getFile();
+        File database= new File(resource.getFile().getPath());
        // InputStream inputStream = resource.getInputStream();
 
 
