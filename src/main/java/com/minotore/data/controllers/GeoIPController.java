@@ -1,7 +1,7 @@
-package com.example.demo.controllers;
+package com.minotore.data.controllers;
 
-import com.example.demo.models.GeoIP;
-import com.example.demo.services.GeoIPService;
+import com.minotore.data.models.GeoIP;
+import com.minotore.data.services.GeoIPService;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

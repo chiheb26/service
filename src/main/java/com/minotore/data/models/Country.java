@@ -1,4 +1,4 @@
-package com.example.demo.models;
+package com.minotore.data.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.minotore.data.config;
 
 import com.maxmind.geoip2.DatabaseReader;
 import org.springframework.beans.factory.annotation.Autowired;

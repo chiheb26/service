@@ -1,8 +1,8 @@
-package com.example.demo.services;
+package com.minotore.data.services;
 
-import com.example.demo.models.Country;
-import com.example.demo.models.GeoIP;
-import com.example.demo.models.Location;
+import com.minotore.data.models.Country;
+import com.minotore.data.models.GeoIP;
+import com.minotore.data.models.Location;
 import com.maxmind.geoip2.DatabaseReader;
 import com.maxmind.geoip2.exception.GeoIp2Exception;
 import com.maxmind.geoip2.model.CityResponse;
